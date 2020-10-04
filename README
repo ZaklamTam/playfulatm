@@ -1,0 +1,218 @@
+CSC207 Project: ATM Machine
+This is an ATM machine(Automated Teller Machine) simulator
+User will interact with their bank account through the ATM machine
+
+------------------------------- HOW TO USE -------------------------------
+1. go to package phase2/src/main/system and run ControlSystem.java
+2. login as bank manager and set the date first
+3. now you can try all other functionalities.
+
+MainMenu
+  1
+    [Existing User]
+        login: ""
+        password: ""
+
+          1 [Transfer]
+
+          2 [Pay bill]
+
+          3 [Deposit]
+             see FILES deposits.txt for deposit format
+             1. shut down
+             2. write deposits.txt file
+             3. run the program and shut down again
+
+          4 [Withdraw]
+
+          5 [Password]
+            new password: - consist of upper or lower case letter and/or numbers
+                          - 1 <= length <= 20
+
+          6 [Have Fun]
+            Request a Gambling account and play the game!
+            You can have One Gambling Account only!
+
+          7 [Add Joint User]
+
+          8 [Add New Account]
+
+          9 [Log Out]
+
+
+  2 [New User]
+        Login ID: combination of letters and numbers
+        default password: "1111"
+
+  3 [Employee]
+        - go to [Bank Manager] to add a new employee!
+        1. Check new account Requests
+        2. Restock
+            country: "Canadian"
+            denomination: 5/10/20/50
+            amount: number >= 0
+        3. Shut down system
+
+  4 [Bank Manager]
+            Login: "8888"
+            Password: "6666"
+            1. Check new account requests
+            2. Check joint account requests
+            3. Check new user requests
+            4. Check Undo requests
+            5. Freeze Account
+            6. Restock
+                see Employee [1. Restock]
+            7. Set system date
+                Enter valid number
+                【e.g. 1999 1 1】
+            8. Add Employee
+               To login as new employee, you will need to shut down the system first
+            6. Log Out
+            7. SHUT DOWN SYSTEM
+
+
+------------------------------- NEW FUNCTIONALITIES (Phase 2) -------------------------------
+ACCOUNT
+1. new type of account: Gambling Account
+2. user can request joint users for his/her account
+3. account will update (increase/decrease balance) at each end of month
+
+MANAGER
+1. new EmployeeManager
+2. Bank manager can freeze account
+
+ATM
+1. ATM can be restock by bank manager and employee
+2. money in ATM is Canadian dollars
+3. GUI
+
+
+
+
+------------------------------- FUNCTIONALITIES (phase 1) -------------------------------
+# User
+
+1. Transaction
+    1.1 transfer money between the user's own accounts
+    1.2 transfer money to other user's account
+    1.3 transfer money to a non-user account
+    1.4 deposit money into account (SEE deposit.txt in Files below)
+    1.5 withdraw money from any account
+    1.6 deposit money to any account
+
+2. View account information
+    The account information is up-to-date as of the previous day
+    2.1 view a summary of all of their accounts' balances
+    2.2 the most recent transaction of any account the user own
+    2.3 the date of creation of any accounts the user own
+    2.4 the net total of the user
+        (net total = total of debt account balance - total of asset account balance)
+
+3. Other operations
+    3.1 request to create a new account from the bank manager
+    3.2 register as new user
+    3.3 change password of login
+
+
+# Bank Manager
+1. create account
+2. restock the ATM machine
+3. create and set the initial password
+4. undo the most recent transaction of any account, except for paying bills
+
+
+------------------------------- BOUNDARIES -------------------------------
+1. Program/System
+    - All inputs should come from keyboard or deposits.txt only
+    - All files and information will be stored and clear before the program
+      shut down
+
+
+2. ATM machine
+    - The machine has bills of $5, $10, $20, $50 denomination in the machine
+    - Amount of each denomination is greater than 20
+    - can be restocked by bank manager and/or employee
+
+
+3. User
+    - User has a login and password
+    - login and password can only be created and set by bank manager
+    - Each user has unique login
+    - The user must have correct login and password in order to interact with
+      their accounts
+
+4. Account
+    - The program is the only interaction that user has with their bank account
+    - Each user can have more than one account
+    - All accounts can do withdrawal transaction
+    - There are three types of account (Debt account, Asset account)
+        + Debt account
+          owe money -> positive balance
+          overpays -> negative balance
+
+            > Credit Cards Account
+                * can transfer in
+                * cannot transfer out
+            > Line of Credit Account
+                * can transfer in
+                * can transfer out
+        + Asset Account
+            money in -> positive balance
+            money out -> negative balance
+
+            > Chequing Account
+                * one of all chequing accounts of this user must be selected as
+                  "primary" account
+                * deposit money will default go to "primary" account
+                * withdrawal is not allowed if the account has negative balance
+                * When doing withdrawal transaction, the balance is allowed to decrease
+                  to a minimum of -$100 (eg. balance < $-100 is not allowed)
+            > Saving Account
+                * balance is always positive
+                * All saving accounts' balance will increase by 0.1% on the 1st of each
+                  month before closing
+                  (eg. $100 on Jan 31th -> $100.10 on Feb 1st)
+            > Gambling Account
+
+
+5. Time
+    - The time is set by bank manager only once
+
+
+------------------------------- Database -------------------------------
+1. outgoing.txt
+   Store the pay bill transaction information
+
+2. deposits.txt
+    An input file used to deposits cash/cheque into the user's account
+    - [FORMAT]
+        - Cash
+            [login;accountID,number of $5,number of $10,number of $20,number of $50;cash (type)]
+            example: "IronMan;88886666;1,2,3,4;cash;Canadian"
+        - Cheque
+            [login;accountID;amount;"cheque"]
+            example: "CaptainAmerica;10086;233;cheque"
+
+3. alerts.txt
+    - Read by real life manager and handle by restocking the machine
+    - An alert will be sent to this file when the amount of any denomination
+      is less than $20
+
+4. manager.txt
+    record login and password of manger
+
+5. employee.txt
+    record all the employees' login and password
+
+------------------------------- Images -------------------------------
+all the image used in GUI
+see citation at file "References"
+
+------------------------------- AUTHORS -------------------------------
+- Yong Lan Wu
+- Shixuan Li
+- Kexin Guo
+- Haoyu Shen
+- Zelin Tan
+- Yun Shan Guan

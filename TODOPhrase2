@@ -1,0 +1,41 @@
+Phrase 1:
+
+Account and all subclasses of Account - Alice
+AccountManager - Alice
+User - Alice
+File Manager - Shy, Lam
+Cash Machine - Anna
+Transaction - Yun
+Date - Yun
+BankMachine, Control System - Nadia, Anna
+ManagerMenu - Anna
+all subclasses of Option nested inside ManagerMenu - Anna
+Menu, MainMenu, UserMenu - Nadia
+Option and all subclasses of Option nested inside MainMenu and UserMenu - Nadia
+SystemInfo - Nadia
+SerializationProcessor - Nadia
+
+ReadMe.txt - Yun
+Java doc - Lam
+UML design - Shy
+Info needed in UML - everyone
+Comments - everyone
+
+
+
+
+Phrase 2:
+
+UI: PayBill, Withdraw, create new Accounts, Register Menu - Alice  -- wuyong3
+UI: UserMenu, Deposit, Transfer, Joint Account, gamble, Undo transaction, reset password, view history - Lam
+UI: Manager Menu, Login, Approve account, Approve User, set date, restock - Shy -- shenhaoy
+Main: Refactor, CashManager, ManagerManager, Employee manager  - Anna -- annaguo
+Main: Refactor, Freeze Account - Yun --- guanyun
+Main: Refactor, UserManager, MainManager,  Employee manager - Nadia -- Shixuan Li
+
+
+ReadMe.txt - Yun
+Java doc - Lam
+UML design - Shy
+Info needed in UML - everyone
+Comments - everyone

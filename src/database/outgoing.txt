@@ -1,0 +1,42 @@
+PayBill Transaction of amount $233.00 to Doge Inc. on mmddyyyy: 01/02/1970
+PayBill Transaction of amount $233.00 to Doge Inc. on mmddyyyy: 01/11/1970
+PayBill Transaction of amount $10.00 to BANK - gambling account on mmddyyyy: 01/11/1970
+PayBill Transaction of amount $233.00 to BANK - gambling account on mmddyyyy: 01/11/1970
+PayBill Transaction of amount $0.00 to Cate Inc. on 01/11/1970
+PayBill Transaction of amount $1.00 to BANK - gambling account on 01/11/1970
+PayBill Transaction of amount $0.00 to BANK's gambling account on 01/02/1970
+PayBill Transaction of amount $-233.00 to BANK's gambling account on 01/02/1970
+PayBill Transaction of amount $-4496153351.00 to BANK's gambling account on 01/02/1970
+PayBill Transaction of amount $-9864165.00 to BANK's gambling account on 01/02/1970
+PayBill Transaction of amount $30330.00 to BANK's gambling account on 01/02/1970
+PayBill Transaction of amount $-66666.00 to BANK's gambling account on 01/02/1970
+PayBill Transaction of amount $-666666.00 to BANK's gambling account on 01/02/1970
+PayBill Transaction of amount $-6666666.00 to BANK's gambling account on 01/02/1970
+PayBill Transaction of amount $-66666666.00 to BANK's gambling account on 01/02/1970
+PayBill Transaction of amount $0.00 to BANK's gambling account on 01/02/1874
+PayBill Transaction of amount $0.00 to Cate Inc. on 01/02/1874
+PayBill Transaction of amount $0.00 to CATE INC. on 01/02/1874
+PayBill Transaction of amount $2.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $1.00 to BANK's gambling account on 01/08/1874
+PayBill Transaction of amount $100.00 to BANK's gambling account on 03/29/1999
+PayBill Transaction of amount $20.68 to BANK's interest account on 03/31/1999
+PayBill Transaction of amount $500.00 to U of T on 04/01/1999
+PayBill Transaction of amount $100.00 to BANK's gambling account on 03/29/1999
+PayBill Transaction of amount $55.00 to BANK's gambling account on 03/31/1999
+PayBill Transaction of amount $23.10 to BANK's interest account on 03/31/1999
+PayBill Transaction of amount $500.00 to U of T on 04/01/1999
+PayBill Transaction of amount $30624700.00 to BANK's gambling account on 04/04/1999
+PayBill Transaction of amount $2.00 to BANK's gambling account on 04/04/1999
